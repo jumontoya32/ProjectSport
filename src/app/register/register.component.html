@@ -1,0 +1,84 @@
+<body>
+  <div class="container">
+    <div class="screen">
+      <div class="screen__content">
+        <form class="login" (ngSubmit)="onRegister()">
+          <h4 class="mt-4" style="color: #37517e">Bicicleteria Online</h4>
+          <div class="login__field">
+            <i class="login__icon fa-solid fa-user"></i>
+            <input
+              type="email"
+              name="email"
+              [(ngModel)]="registerData.email"
+              class="login__input"
+              placeholder="User Email"
+            />
+          </div>
+          <div class="login__field">
+            <i class="login__icon fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              [(ngModel)]="registerData.password"
+              class="login__input"
+              placeholder="Password"
+            />
+          </div>
+          <div class="login__field">
+            <i class="login__icon fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="confirm password"
+              [(ngModel)]="registerData.confirmPassword"
+              class="login__input"
+              placeholder="Confirm Password"
+            />
+          </div>
+
+          <div class="login__field">
+            <i class="login__icon fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="name"
+              [(ngModel)]="registerData.name"
+              class="login__input"
+              placeholder="Name"
+            />
+          </div>
+          <div class="login__field">
+            <select [(ngModel)]="registerData.role" name="role" required class="custom-select">
+                <option value="viewer">Visualizador</option>
+                <option value="admin">Administrador</option>
+            </select>
+        </div>
+          <button class="button login__submit" type="submit">
+            <span class="button__text">Registrarse</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>
+        </form>
+        <div class="social-login">
+          <a [routerLink]="'/login'" style="color: white">Iniciar Sesión</a>
+          <div class="social-icons">
+            <a href="#" class="social-login__icon fab fa-instagram"></a>
+            <a href="#" class="social-login__icon fab fa-facebook"></a>
+            <a href="#" class="social-login__icon fab fa-twitter"></a>
+          </div>
+        </div>
+      </div>
+      <div class="screen__background">
+        <span
+          class="screen__background__shape screen__background__shape4"
+        ></span>
+        <span
+          class="screen__background__shape screen__background__shape3"
+        ></span>
+        <span
+          class="screen__background__shape screen__background__shape2"
+        ></span>
+        <span
+          class="screen__background__shape screen__background__shape1"
+        ></span>
+      </div>
+    </div>
+  </div>
+</body>

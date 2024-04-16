@@ -1,0 +1,633 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top header-scrolled">
+  <div class="container d-flex align-items-center">
+    <h1 class="logo"><a [routerLink]="'/'">Bicicletas Online</a></h1>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="/home#hero">Inicio</a></li>
+        <li><a class="nav-link scrollto" href="/home#about">Nosotros</a></li>
+        <li><a class="nav-link scrollto" href="/home#services">Servicios</a></li>
+        <li><a class="nav-link scrollto" href="/home#team">Equipo</a></li>
+        <li><a class="nav-link scrollto" href="/home#contact">Contacto</a></li>
+        <li>
+          <a class="nav-link scrollto" [routerLink]="'/products'">Productos</a>
+        </li>
+        <li>
+          <a
+            class="getstarted scrollto"
+            (click)="logout()"
+            style="cursor: pointer"
+            >Cerrar Sesión</a
+          >
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- .navbar -->
+  </div>
+</header>
+<!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h1>Bicicleteria Online</h1>
+        <h2>
+          ¡Bienvenido a Bicicleteria Online! Somos tu tienda de bicicletas de
+          confianza, dedicada a ofrecerte lo mejor en ciclismo. Ya sea que seas
+          un ciclista principiante o un entusiasta experimentado, aquí
+          encontrarás todo lo que necesitas para disfrutar de la bicicleta.
+        </h2>
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <a href="/home/#about" class="btn-get-started scrollto">Iniciemos !</a>
+        </div>
+      </div>
+      <div
+        class="col-lg-6 order-1 order-lg-2 hero-img"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <img
+          src="https://http2.mlstatic.com/storage/mshops-appearance-api/images/0/733149600/logo-2021052419202530600.png"
+          class="img-fluid animated"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<main id="main">
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Nosotros</h2>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-6">
+          <p>
+            Bienvenido a Bicicleteria Online, tu destino para todo lo
+            relacionado con bicicletas. Desde bicicletas de montaña hasta de
+            carretera, tenemos una amplia selección para ciclistas de todos los
+            niveles. Ofrecemos bicicletas de las mejores marcas, accesorios de
+            alta calidad y un servicio técnico experto para mantener tu
+            bicicleta en perfecto estado. Ya sea que estés buscando tu primera
+            bicicleta o que seas un ciclista experimentado, nuestro equipo
+            amigable y conocedor está aquí para ayudarte a encontrar lo que
+            necesitas.
+          </p>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <p>
+            Descubre nuestra gama de productos, desde cascos y ropa de ciclismo
+            hasta piezas de repuesto y herramientas de mantenimiento. En
+            Bicicleteria Online tu satisfacción es nuestra prioridad. Explora
+            nuestra página web para conocer nuestras últimas ofertas y eventos,
+            o visítanos en nuestra tienda para disfrutar de un servicio
+            personalizado. ¡Ponte en marcha con nosotros hoy mismo!
+          </p>
+          <a href="/home/#" class="btn-learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Us Section -->
+
+  <!-- ======= Why Us Section ======= -->
+  <section id="why-us" class="why-us section-bg">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row">
+        <div
+          class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+        >
+          <div class="content">
+            <h3>
+              Tienda
+              <strong>Online</strong>
+            </h3>
+            <p>
+              En nuestra sección de Tienda encontrarás todo lo que necesitas
+              para tus aventuras en bicicleta. Explora nuestras categorías de
+              productos para descubrir opciones que se adapten a tus gustos y
+              necesidades:
+            </p>
+          </div>
+
+          <div class="accordion-list">
+            <ul>
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  class="collapse"
+                  data-bs-target="#accordion-list-1"
+                  ><span>01</span> Bicicletas de Montaña<i
+                    class="bx bx-chevron-down icon-show"
+                  ></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="accordion-list-1"
+                  class="collapse show"
+                  data-bs-parent=".accordion-list"
+                >
+                  <p>
+                    Diseñadas para los terrenos más exigentes, nuestras
+                    bicicletas de montaña ofrecen durabilidad y rendimiento en
+                    caminos irregulares y senderos.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion-list-2"
+                  class="collapsed"
+                  ><span>02</span> Bicicletas de Carretera
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="accordion-list-2"
+                  class="collapse"
+                  data-bs-parent=".accordion-list"
+                >
+                  <p>
+                    Si prefieres la velocidad y la eficiencia, nuestras
+                    bicicletas de carretera están optimizadas para ofrecer un
+                    rendimiento excepcional en asfalto.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion-list-3"
+                  class="collapsed"
+                  ><span>03</span> Accesorios
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="accordion-list-3"
+                  class="collapse"
+                  data-bs-parent=".accordion-list"
+                >
+                  <p>
+                    Equípate con todo lo necesario para tus rutas, desde cascos,
+                    guantes y ropa de ciclismo hasta luces, candados y más.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion-list-4"
+                  class="collapsed"
+                  ><span>04</span> Ropa de Ciclismo
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="accordion-list-4"
+                  class="collapse"
+                  data-bs-parent=".accordion-list"
+                >
+                  <p>
+                    Descubre nuestra selección de ropa especializada para
+                    ciclistas, diseñada para brindarte comodidad y rendimiento
+                    en cada paseo.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 align-items-stretch order-1 order-lg-2 img"
+          style="background-image: url('../../assets/bicicleteria.jpg')"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+        >
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Why Us Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Servicios</h2>
+        <p style="text-align: justify">
+          En Bicicletería Online, nos enorgullecemos de brindar una variedad
+          completa de servicios para los amantes del ciclismo. Nuestro objetivo
+          es satisfacer todas tus necesidades relacionadas con bicicletas, ya
+          seas un principiante o un ciclista experimentado.
+        </p>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div class="icon-box">
+            <div class="icon"><i class="fa-solid fa-bicycle"></i></div>
+            <h4><a href="">Venta de Bicicletas</a></h4>
+            <p style="text-align: justify">
+              Descubre nuestra selección de bicicletas de alta calidad, desde
+              bicicletas de montaña y carretera hasta modelos híbridos y
+              eléctricos. Trabajamos con marcas de prestigio para garantizar que
+              encuentres la bicicleta perfecta para tu estilo y necesidades.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="icon-box">
+            <div class="icon"><i class="fa-solid fa-hammer"></i></div>
+            <h4><a href="">Reparación y Mantenimiento</a></h4>
+            <p style="text-align: justify">
+              Nuestro taller de servicio técnico cuenta con expertos capacitados
+              que brindan reparaciones, ajustes y mantenimiento para todo tipo
+              de bicicletas.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <div class="icon-box">
+            <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h4><a href="">Venta de Accesorios</a></h4>
+            <p style="text-align: justify">
+              Encuentra una amplia gama de accesorios de ciclismo, desde cascos
+              y ropa hasta candados, luces y más. Equipamos a los ciclistas con
+              todo lo necesario para una experiencia segura y cómoda.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h4><a href="">Alquiler de Bicicletas</a></h4>
+            <p style="text-align: justify">
+              Alquila una bicicleta para tus aventuras de fin de semana o paseos
+              urbanos. Ofrecemos alquileres flexibles de diferentes tipos de
+              bicicletas para adaptarse a tus necesidades y preferencias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services Section -->
+
+  <!-- ======= Team Section ======= -->
+  <section id="team" class="team section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Equipo</h2>
+        <p>
+          Nuestro equipo de expertos está aquí para brindarte el mejor servicio
+          y asesoramiento en todo lo relacionado con el ciclismo.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="member d-flex align-items-start">
+            <div class="pic">
+              <img src="../../assets/team-1.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <span>Mecánico</span>
+              <p>
+                Mecánico altamente capacitado que se ocupa de reparar y mantener
+                tu bicicleta en perfectas condiciones.
+              </p>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-6 mt-4 mt-lg-0"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="member d-flex align-items-start">
+            <div class="pic">
+              <img src="../../assets/team-2.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Sarah Jhonson</h4>
+              <span>Vendedora</span>
+              <p>
+                Nuestra vendedora está lista para ayudarte a elegir la bicicleta
+                y los accesorios ideales para ti.
+              </p>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="member d-flex align-items-start">
+            <div class="pic">
+              <img src="../../assets/team-3.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>William Anderson</h4>
+              <span>Mecánico</span>
+              <p>
+                Mecánico altamente capacitado que se ocupa de reparar y mantener
+                tu bicicleta en perfectas condiciones.
+              </p>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member d-flex align-items-start">
+            <div class="pic">
+              <img src="../../assets/team-4.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Amanda Jepson</h4>
+              <span>Administradora</span>
+              <p>
+                Nuestra administradora se encarga de garantizar una experiencia
+                sin problemas, desde el momento en que entras a la tienda hasta
+                que te vas con una sonrisa.
+              </p>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Team Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Contacto</h2>
+        <p style="text-align: justify">
+          En Bicicleteria Online, nos encantaría escuchar de ti. Si tienes
+          alguna pregunta, comentario o inquietud, no dudes en ponerte en
+          contacto con nosotros. Puedes visitarnos en nuestra tienda física para
+          recibir atención personalizada de nuestro equipo. También puedes
+          llamarnos por teléfono o enviarnos un correo electrónico para obtener
+          ayuda o información adicional.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Dirección:</h4>
+              <p>Cra 20 #2-30 Sogamoso, Boyacá</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Correo:</h4>
+              <p>infoexample.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Telefono:</h4>
+              <p>+1 7775451</p>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              frameborder="0"
+              style="border: 0; width: 100%; height: 290px"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form
+            action="forms/contact.php"
+            method="post"
+            role="form"
+            class="php-email-form"
+          >
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Message</label>
+              <textarea
+                class="form-control"
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Your message has been sent. Thank you!
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Arsha</h3>
+          <p>
+            Cra 20 #2-30 <br />
+            Sogamoso, Boyacá<br />
+            Colombia <br /><br />
+            <strong>Telefono:</strong> +1 7775451<br />
+            <strong>Correo:</strong> infoxample.com<br />
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li>
+              <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+            </li>
+            <li>
+              <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+            </li>
+            <li>
+              <i class="bx bx-chevron-right"></i>
+              <a href="#">Terms of service</a>
+            </li>
+            <li>
+              <i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li>
+              <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+            </li>
+            <li>
+              <i class="bx bx-chevron-right"></i>
+              <a href="#">Web Development</a>
+            </li>
+            <li>
+              <i class="bx bx-chevron-right"></i>
+              <a href="#">Product Management</a>
+            </li>
+            <li>
+              <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+            </li>
+            <li>
+              <i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>
+            Cras fermentum odio eu feugiat lide par naso tierra videa magna
+            derita valies
+          </p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom clearfix">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Arsha</span></strong
+      >. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->

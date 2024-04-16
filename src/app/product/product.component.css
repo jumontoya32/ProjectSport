@@ -1,0 +1,67 @@
+/* Estilo general para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo para la tabla */
+.table-container {
+    margin: 20px;
+    margin-top: 10%;
+}
+
+.table {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Junta los bordes de las celdas */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Color del borde */
+    padding: 10px; /* Espaciado interno de las celdas */
+    text-align: left;
+}
+
+.table th {
+    background-color: #6A679E; /* Fondo azul para las celdas de cabecera */
+    color: white; /* Texto blanco para las celdas de cabecera */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternar el fondo de las filas */
+}
+
+.table a {
+    color: #6A679E; /* Color para los enlaces */
+    text-decoration: none;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el modal */
+.modal-header {
+    background-color: #6A679E; /* Fondo azul para la cabecera del modal */
+    color: white; /* Texto blanco */
+}
+
+.modal-footer .btn-primary {
+    background-color: #6A679E; /* Azul para el botón de guardar */
+    border: none;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d; /* Gris para el botón de cerrar */
+    border: none;
+}

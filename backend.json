@@ -1,0 +1,111 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "nameProduct": "Bicicleta de Montaña",
+      "description": "Una bicicleta todoterreno para terrenos difíciles.",
+      "typeProduct": "bicicleta"
+    },
+    {
+      "id": "2",
+      "nameProduct": "Servicio de Reparación",
+      "description": "Reparación completa de bicicletas, incluyendo ajuste de frenos y cambios.",
+      "typeProduct": "servicios"
+    }
+  ],
+  "register": [
+    {
+      "id": "97f1",
+      "email": "felipe-1716@hotmail.com",
+      "password": "12345",
+      "firstName": "Luis",
+      "lastName": "Chaparro",
+      "role": "admin"
+    },
+    {
+      "id": "240e",
+      "email": "luis.chaparroh@usantoto.edu.co",
+      "password": "12345",
+      "firstName": "Luis",
+      "lastName": "Hurtado",
+      "role": "admin"
+    },
+    {
+      "id": "0e9f",
+      "name": "Luis Felipe Chaparro Hurtado",
+      "email": "felipe-1716@hotmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "role": "admin"
+    },
+    {
+      "id": "ca94",
+      "name": "Luis Felipe Chaparro Hurtado",
+      "email": "luis.chaparro@genback.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "role": "admin"
+    },
+    {
+      "id": "9c84",
+      "name": "Luis Chaparro",
+      "email": "luis.chaparro@genback.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "3dde",
+      "name": "Luis Chaparro",
+      "email": "felipe-1716@hotmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "role": "viewer"
+    },
+    {
+      "id": "52f5",
+      "name": "Luis",
+      "email": "felipe-1716@hotmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "role": "viewer"
+    }
+  ],
+  "login": [
+    {
+      "id": "356f",
+      "email": "felipe-1716@hotmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "8288",
+      "email": "felipe-1716@hotmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "c8d2",
+      "email": "felipe-1716@hotmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "297b",
+      "email": "luis.chaparro@genback.com",
+      "password": "12345"
+    },
+    {
+      "id": "0d3a",
+      "email": "luis.chaparro@genback.com",
+      "password": "123456"
+    },
+    {
+      "id": "abf7",
+      "email": "felipe-1716@hotmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "1d6a",
+      "email": "felipe-1716@hotmail.com",
+      "password": "1234"
+    }
+  ]
+}
